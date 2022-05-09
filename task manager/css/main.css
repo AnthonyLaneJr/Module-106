@@ -1,0 +1,51 @@
+body {
+  background-color: bisque;
+  color: darkgray;
+}
+.main {
+  display: flex;
+}
+h1 {
+  color: darkslategray;
+  text-align: center;
+}
+input {
+  color: darkslategray;
+}
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#list {
+  min-height: calc(100vh - 89px);
+  flex: 3;
+  margin-left: 5%;
+}
+#form {
+  min-height: calc(100vh - 89px);
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+textarea {
+  width: 95%;
+}
+.iImportant {
+  font-size: 32px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.form-input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#form .form-input .fa-bug-slash {
+  /*3 seperate designations define the class path selection i.e. seciont id form-div.form-input, i*/
+  color: lightgray;
+}
+#form .form-input .fa-bug {
+  color: lightcoral;
+}
