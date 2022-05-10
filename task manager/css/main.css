@@ -21,11 +21,9 @@ button {
   flex: 3;
   margin-left: 5%;
 }
-#form {
+section.form {
   min-height: calc(100vh - 89px);
   flex: 3;
-  display: flex;
-  flex-direction: column;
   margin-right: 5%;
 }
 textarea {
