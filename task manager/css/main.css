@@ -1,16 +1,16 @@
 body {
-  background-color: bisque;
-  color: darkgray;
+  background-image: url(../images/backgorund1.jpg);
 }
 .main {
   display: flex;
 }
-h1 {
+h1.main-title {
   color: darkslategray;
   text-align: center;
 }
 input {
   color: darkslategray;
+  background-color: bisque;
 }
 button {
   margin-top: 1rem;
@@ -20,11 +20,13 @@ button {
   min-height: calc(100vh - 89px);
   flex: 3;
   margin-left: 5%;
+  max-width: 50%;
 }
-section.form {
+#form {
   min-height: calc(100vh - 89px);
   flex: 3;
   margin-right: 5%;
+  color: darkslategray;
 }
 textarea {
   width: 95%;
@@ -42,8 +44,36 @@ textarea {
 }
 #form .form-input .fa-bug-slash {
   /*3 seperate designations define the class path selection i.e. seciont id form-div.form-input, i*/
-  color: lightgray;
+  color: darkslategray;
 }
 #form .form-input .fa-bug {
-  color: lightcoral;
+  color: coral;
+}
+
+/* task display */
+div.task-item {
+  background-image: url("../images/chalkboard.jpg");
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  margin-right: 5%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: darkgray;
+  border-radius: 15px;
+  color: tan;
+}
+div.task-item div {
+  margin: 3px;
+}
+div.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  font-weight: 700;
+}
+p.title {
+  font-size: xx-large;
 }

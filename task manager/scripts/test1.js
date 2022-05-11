@@ -34,4 +34,3 @@ function runTests() {
   console.log(cat1);
 }
 //no onload-because ach project should only have one init function
-runTets();
