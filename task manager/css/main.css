@@ -1,26 +1,17 @@
+/*-----HTML Structure------*/
 body {
-  background-image: url(../images/backgorund1.jpg);
+  background-image: linear-gradient(to bottom right, rgb(228, 61, 228), gold);
 }
 .main {
   display: flex;
-}
-h1.main-title {
-  color: darkslategray;
-  text-align: center;
-}
-input {
-  color: darkslategray;
-  background-color: bisque;
-}
-button {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  position: static;
 }
 #list {
   min-height: calc(100vh - 89px);
   flex: 3;
   margin-left: 5%;
   max-width: 50%;
+  left: 20%;
 }
 #form {
   min-height: calc(100vh - 89px);
@@ -28,19 +19,45 @@ button {
   margin-right: 5%;
   color: darkslategray;
 }
+.hidden {
+  display: none;
+}
+.relative {
+  position: relative;
+}
+.btn-relative {
+  position: relative;
+  left: 33%;
+}
+/*-----button------*/
+#hideBtn {
+  width: 3.5rem;
+  position: relative;
+}
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*----script/input styling-------*/
+h1.main-title {
+  color: darkslategray;
+  text-align: center;
+}
+.form-input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+input {
+  color: darkslategray;
+  background-color: bisque;
+}
 textarea {
   width: 95%;
 }
 .iImportant {
   font-size: 32px;
   cursor: pointer;
-}
-.hidden {
-  display: none;
-}
-.form-input {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 #form .form-input .fa-bug-slash {
   /*3 seperate designations define the class path selection i.e. seciont id form-div.form-input, i*/
@@ -55,6 +72,7 @@ div.task-item {
   background-image: url("../images/chalkboard.jpg");
   display: flex;
   flex-direction: row;
+  width: fit-content;
   padding: 3px;
   margin-right: 5%;
   border-width: 5px;

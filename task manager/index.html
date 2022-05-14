@@ -18,7 +18,11 @@
         <h1 class="main-title">Welcome to my Task Manager</h1>
         <main class="main">
             <section id="list">
-                <button onclick=togglePanel() id="hideBtn">Task Creater</button>
+                <button onclick=togglePanel() id="hideBtn">Hide</button>
+                <button onclick=deleteTasks() id="deleteBtn">Delete All Tasks</button>
+                <div class="pending-tasks">
+                    <label class="form-label" id="pendingLabel"></label>
+                </div>
                 <div id="tasks">
 
                 </div>
